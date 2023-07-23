@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= sub %></p>
+    <table>
+      <tr style= "font-style: bold;background-color:cornflowerblue; ">
+        <th >ID# </th>
+        <th>Term</th>
+        <th style = "width: max-content;">Description</th>
+        <th>Reference</th>
+      </tr>
+      <% names.forEach((name) =>{ %>
+        <tr>
+      <td>
+        <%= name.Id %>
+      </td>
+      <td>
+        <%= name.Term %>
+      </td>
+      <td>
+        <%= name.Description %>
+      </td>
+      <td>
+        <%= name.reference %>
+      </td>
+      </tr>
+      <%  } ) %>
+    </table>
+  </body>
+</html>
