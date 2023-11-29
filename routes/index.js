@@ -50,7 +50,7 @@ const nameList = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'SIT722 Devops Glossary', sub:'Welcome to mywebsite showing a collection of Devops terms and their brief description', names:nameList});
+  res.render('index', { title: 'GH Technologies Testing', sub:'Welcome to mywebsite showing a collection of Devops terms and their brief description', names:nameList});
 });
 
 module.exports = router;
